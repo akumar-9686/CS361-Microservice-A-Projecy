@@ -25,13 +25,13 @@ while True:
 
         if dictionary[username] == password:
             var = open("status.txt", 'w')
-            var.write('true')
+            var.write('Entry exists')
             var.close()
 
     except:
             dictionary[username] = password
             var = open("status.txt", 'w')
-            var.write('false')
+            var.write('New Entry')
             var.close()
 
     str1 = str(dictionary)
